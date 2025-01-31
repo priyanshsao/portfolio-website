@@ -3,8 +3,6 @@ languageCode: en-us
 title: Hugo Fresh Theme
 
 module:
-  # uncomment line below for local development of module
-  # workspace: hugo.work
   imports:
     path: github.com/StefMa/hugo-fresh
 
@@ -28,7 +26,7 @@ params:
   # preloader: false
   navbarlogo:
   # Logo (from static/images/logos/___)
-    image: logos/fresh.svg
+    image: logos/navlogo.svg
     link: /
     # Default width/height. Uncomment if you need to change
     # width: 112
@@ -62,57 +60,21 @@ params:
       url: https://bulma.io/
   # Customizable navbar. For a dropdown, add a "sublinks" list.
   navbar:
-  - title: Features
+  - title: Home
     url: /
-  - title: Pricing
-    url: /
-  - title: Dropdown
+  - title: About
+    url: /about
+  - title: More
     sublinks:
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-    - title: Dropdown item
-      url: /
-  - title: Log in
-    url: /
-  - title: Sign up
-    url: /
+    - title: Blog
+      url: /blog
+    - title: Contributions
+      url: /contributions
+    - title: Projects
+      url: /projects
+  - title: Resume
+    url: 
     button: true
-  sidebar:
-    # Logo (from static/images/logos/___.svg)
-    logo: fresh-square
-    sections:
-    - title: User
-      icon: user
-      links:
-      - text: Profile
-        url: /
-      - text: Account
-        url: /
-      - text: Settings
-        url: /
-    - title: Messages
-      icon: envelope
-      links:
-      - text: Inbox
-        url: /
-      - text: Compose
-        url: /
-    - title: Images
-      icon: image
-      links:
-      - text: Library
-        url: /
-      - text: Upload
-        url: /
-    - title: Settings
-      icon: cog
-      links:
-      - text: User settings
-        url: /
-      - text: App settings
-        url: /
   section1:
     title: Great power comes
     subtitle: with great responsibility
