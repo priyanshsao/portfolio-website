@@ -1,6 +1,6 @@
-baseURL: http://something-fresh.org/
+baseURL: 
 languageCode: en-us
-title: Hugo Fresh Theme
+title: Priyansh Sao
 
 module:
   imports:
@@ -11,7 +11,6 @@ googleAnalytics: # Put in your tracking code without quotes like this: UA-XXX fo
 # Disables warnings
 disableKinds:
 - taxonomy
-- taxonomyTerm
 markup:
   goldmark:
     renderer:
@@ -53,67 +52,61 @@ params:
   - title: Home
     url: /
   - title: About
-    url: /about
+    url: /
   - title: More
     sublinks:
     - title: Blog
-      url: /blog
+      url: /
     - title: Contributions
-      url: /contributions
+      url: /
     - title: Projects
-      url: /projects
+      url: /
   - title: Resume
     url: 
     button: true
   
   footer:
     # Logo (from static/images/logos/___)
-    logo: fresh-white-alt.svg
+    #logo: fresh-white-alt.svg
     # Social Media Title
-    socialmediatitle: Follow Us
+    socialmediatitle: Follow Me
     # Social media links (GitHub, Twitter, etc.). All are optional.
     socialmedia:
-    - link: https://github.com/StefMa
+    - link: https://github.com/priyanshsao
       # Icons are from Font Awesome
       icon: github
-    - link: https://dribbble.com/#
-      icon: dribbble
-    - link: https://facebook.com/#
-      icon: facebook
-    - link: https://twitter.com/StefMa91
+    - link: https://x.com/priyanshsao06
       icon: twitter
-    - link: https://bitbucket.org/#
-      icon: bitbucket
+    - link: https://www.linkedin.com/in/priyansh-sao-894737301/
+      icon: linkedin
+    - link: 
+      icon: slack
     bulmalogo: true
     quicklinks:
       column1:
-        title: "Product"
+        title: "Resources"
         links:
-        - text: Discover features
+        - text: Home
           link: /
-        - text: Why choose our product?
+        - text: About
           link: /
-        - text: Compare features
+        - text: Resume
           link: /
-        - text: Our roadmap
-          link: /
-        - text: AGB
-          link: /agb
       column2:
-        title: "Docs"
+        title: "Other"
         links:
-        - text: Get started
+        - text: Github
           link: /
-        - text: User guides
+        - text: Hashnode
           link: /
-        - text: Admin guide
+        - text: Holopin
           link: /
-        - text: Developers
+        - text: Website-info
           link: /
       column3:
         title: "Blog"
         links:
-        - text: Latest news
-          link: /blog/first
-        - text: Tech articles
-          link: /blog/second
+        - text: Kubernetes
+          link: /
+        - text: DSA with Go
+          link: /
