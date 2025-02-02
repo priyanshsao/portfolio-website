@@ -9,7 +9,7 @@
     <div class="columns">
       <div class="column">
         <div class="footer-logo">
-          <img src="{{ printf "images/logos/%s" $logo | relURL }}">
+          <!--<img src="{{ printf "images/logos/%s" $logo | relURL }}"> -->
         </div>
       </div>
       {{- range $quickLinks }}
@@ -36,14 +36,14 @@
               <div class="level-left">
                 {{- range $socialMedia }}
                 <a class="level-item" href="{{ .link }}">
-                  <span class="icon"><i class="fa fa-{{ .icon }}"></i></span>
+                  <span class="icon"><i class="fa fa-{{ .icon }}" title="{{ .icon }}"></i></span>
                 </a>
                 {{- end }}
               </div>
             </nav>
 
             {{- if $bulmaLogo }}
-            <a href="https://bulma.io" target="_blank">
+            <a href="https://bulma.io" target="_blank" title="Bulma">
               <img src="{{ "images/logos/made-with-bulma.png" | relURL }}"
               alt="Made with Bulma" width="128" height="24">
             </a>
@@ -57,12 +57,13 @@
     class="has-text-centered"
     style="
       border-top: 0.5px solid;
-      margin-top: 30px;
+      margin-top: 60px;
       background-color: rgba(10, 10, 10, 0);
       color: #98a9c3;
-      padding-top: 60px;
+      padding-top: 15px;
       padding-bottom: 0;
     "
+    title="copyright"
   >
     © 2025 Priyansh Sao. All rights reserved.
   </div>
