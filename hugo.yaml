@@ -56,13 +56,13 @@ params:
   - title: More
     sublinks:
     - title: Blog
-      url: /
+      url: /posts/
     - title: Contributions
       url: /
     - title: Projects
       url: /
   - title: Resume
-    url: 
+    url: /
     button: true
   
   footer:
@@ -110,3 +110,4 @@ params:
           link: /
         - text: DSA with Go
           link: /
+paginate: 2
