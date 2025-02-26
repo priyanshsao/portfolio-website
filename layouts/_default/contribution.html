@@ -1,0 +1,9 @@
+{{ define "main" }}
+
+  {{ partial "single/contribution.html" . }}
+
+  {{ if .Params.include_footer }}
+  {{ partial "footer.html" . }}
+  {{ end }}
+
+{{ end }}

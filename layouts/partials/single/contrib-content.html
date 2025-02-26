@@ -1,0 +1,90 @@
+<style>
+    .container1 {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 10px;
+    }
+  
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: left;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.3s ease;
+      border: 1px solid #f39200;
+    }
+  
+    .card:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+  
+    .card h2 {
+      margin: 0;
+      font-size: 20px;
+    }
+  
+    .card p {
+      margin: 10px 0;
+      font-size: 16px;
+      color: #777;
+    }
+  
+    .card-footer {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      opacity: 0.8;
+      padding-top: 10px;
+      border: none;
+    }
+  
+    .status {
+      padding: 3px 8px;
+      border-radius: 16px;
+      font-size: 13px;
+    }
+  
+    .open {
+      color: green;
+      background-color: #e6f9e6;
+    }
+  
+    .closed {
+      color: red;
+      background-color: #f9e6e6;
+    }
+  
+    .merged {
+      color: purple;
+      background-color: #f3e6ff;
+    }
+  
+    @media (max-width: 768px) {
+      .container1 {
+        max-width: 90%;
+      }
+  
+      .card {
+        padding: 15px;
+      }
+    }
+  </style>
+  
+  <section class="section is-medium">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-centered-tablet-portrait">
+          <h1 class="title section-title">{{ .Title }}</h1>
+          <h5 class="subtitle is-5 is-muted">{{ .Params.Subtitle }}</h5>
+          <div class="divider"></div>
+        </div>
+      </div>
+  
+      <div class="content">
+        <div class="container1" id="output"></div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/contribution.js"></script>
