@@ -56,9 +56,9 @@ params:
   - title: More
     sublinks:
     - title: Blog
-      url: /posts/
+      url: /blog/
     - title: Contributions
-      url: /
+      url: /contribution/
     - title: Projects
       url: /
   - title: Resume
